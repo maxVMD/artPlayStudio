@@ -1,0 +1,459 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Art Play</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <link rel="stylesheet" href="css/normalize.css">        
+        <link rel="stylesheet" href="css/bootstrap.min.css">  
+        <link rel="stylesheet" href="css/owl.carousel.min.css">   <!--carousel-->
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="js/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
+        <link rel="stylesheet" href="css/main.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+
+    </head>
+    <body ng-app="artPlayApp" ng-cloak>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->   
+        <section class="main text-center" > 
+          <div class="container main-menu">
+            <div id="block1" class="main-menu beauty" >
+
+                    <ul>
+                        <li><a href="#kids">Для детей</a></li>
+                        <li><a href="#gymn">Для вас</a></li>
+                        <li><a href="#missions">Миссия</a></li>
+                        <li><a href="#ourTeam">Команда</a></li>
+                        <li><a href="#atmo">Атмосфера</a></li>
+                        <li><a href="#contcs">Контакты</a></li>
+                    </ul>
+                </div>
+          </div>
+
+          <div class="container-fluid  main-people">
+
+            <div class="col-md-6 girl1">
+              <img src="img/girl.png" alt="girl with baloons">
+            </div> 
+            <div class="col-md-6 jacson">
+              <img src="img/jakson.png" alt="jacson michael">
+            </div> 
+
+            <div class="col-md-12 col-sm-12 col-xs-12 contact text-center">
+              <div id="block3" class="beauty">
+                <h3>+375 (29) 659 32 88</h3><br><br>
+                 <a href="#requestmodal" class="beauty" data-toggle="modal" data-target="#requestmodal" >записаться <img src="img/compose.png" ></a>
+              </div>  
+             
+            </div>
+          </div> 
+
+          <div id="block2"><img  width="40%" src="img/logo.png"></div> 
+
+          <div class="container">
+                 
+          </div>
+
+
+        </section>
+
+
+        <section class="sections"  ng-controller="gymnasticСontroller as kid" ng-cloak>
+            <div class="container gym" >
+
+              <div class="row gym-border">
+
+                  <div class="col-md-3 col-sm-3">
+                    <div class="kid-menu-btn" ng-click="kid.openMenu()">Программы (детские)</div>
+                        <div class="mobile-menu-kids" >
+                             <ul class="mobile-menu-list"  ng-if="kid.show" >
+                              <li><a href="" ng-click="kid.getArtGym(2)">ХОРЕОГРАФИЯ</a></li>
+                              <li><a href="" ng-click="kid.getArtGym(3)">ДЕФИЛЕ</a></li>
+                              <li><a href="" ng-click="kid.getArtGym(4)">СТИЛЬ ВО ВРЕМЕНИ</a></li>
+                              <li><a href="" ng-click="kid.getArtGym(5)">ЭТИКЕТ</a></li>
+                              <li><a href="" ng-click="kid.getArtGym(6)">ФОТОТРЕНИНГ</a></li>
+                              <li><a href="" ng-click="kid.getArtGym(7)">KIDS DANCE</a></li>
+                              <li><a href="" ng-click="kid.getArtGym(8)">KIDS BOXING</a></li>
+                              <li><a href="" ng-click="kid.getArtGym(9)">КЛАССИЧЕСКИЙ ТАНЕЦ</a></li>
+                              <li><a href="" ng-click="kid.getArtGym(1)">ГИМНАСТИКА</a></li>
+                            </ul>
+                        </div>
+                  <nav class="gym-sidenav-1">
+                    <ul>
+                      <li class="white-title"><h4><span class="li-title-bold" ng-click="kid.getArtGym(18)">ЭСТЭТ</span>KIDS</h4></li>
+                      <li><a href="" ng-click="kid.getArtGym(2)">ХОРЕОГРАФИЯ</a></li>
+                      <li><a href="" ng-click="kid.getArtGym(3)">ДЕФИЛЕ</a></li>
+                      <li><a href="" ng-click="kid.getArtGym(4)">СТИЛЬ ВО ВРЕМЕНИ</a></li>
+                      <li><a href="" ng-click="kid.getArtGym(5)">ЭТИКЕТ</a></li>
+                      <li><a href="" ng-click="kid.getArtGym(6)">ФОТОТРЕНИНГ</a></li>
+                    </ul>
+                    <ul>
+                      <li  style="background: white;"><h4><span class="li-title-bold">FIT<small>&</small>DANCE</span>KIDS</h4></li>
+                      <li><a href="" ng-click="kid.getArtGym(7)">KIDS DANCE</a></li>
+                      <li><a href="" ng-click="kid.getArtGym(8)">KIDS BOXING</a></li>
+                      <li><a href="" ng-click="kid.getArtGym(9)">КЛАССИЧЕСКИЙ ТАНЕЦ</a></li>
+                      <li><a href="" ng-click="kid.getArtGym(1)">ГИМНАСТИКА</a></li>
+
+                    </ul>
+                    <ul>
+                      <li style="background: white;"><h4><b class="li-title-bold">ART</b>KIDS</h4></li>
+                      <li><a href="" ng-click="kid.getArtGym(10)">АРТ ТВОРЧЕСТВО</a></li>
+                      <li><a href="" ng-click="kid.getArtGym(11)">ТЕАТРУМ</a></li>
+                      <li><a href="" ng-click="kid.getArtGym(12)">FASHION ИЛЮСТРАЦИЯ</a></li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div class="col-md-9 col-sm-9 gym-text" id="kids">
+                  <div  class="col-md-12 col-sm-12 gym-text">
+                    <span class="gym-text-title" >{{kid.kidArticle[0].title}}</span><br>
+                  </div>
+                  <div class="col-md-12 col-sm-12"><br>
+                  <div class="balery-img">
+                      <img src="{{kid.kidArticle[0].img}}" alt="">
+                    </div>
+                    <div ><div  ng-bind-html="kid.sce.trustAsHtml(kid.kidArticle[0].text)"></div>
+                      
+                    </div><br>
+                  </div>
+                  <br>
+                  <div  class="col-md-12 col-sm-12 ">
+                    <span><p><b>ГРУППЫ:</b> {{kid.kidArticle[0].group}}</p></span><br>
+                    <span><p><b>ВОЗРАСТ:</b> {{kid.kidArticle[0].age}}</p></span>
+                  </div>
+                </div>
+
+                  <div class="col-md-12 col-sm-12 sign-col" >
+                    <div class="sign " data-toggle="modal" data-target="#requestmodal" ng-click="kid.changeIdcat(kid.kidArticle[0].id)" > <a href="">ЗАПИСАТЬСЯ</a></div>
+                  </div><br>
+              </div>
+            </div>
+        </section>
+			<!-- done-->
+
+
+        <section class="mission" id="missions"  ng-controller="missionCtrl" ng-cloak>
+            <div class="container sliderSide">
+
+      				<div class="col-md-6 col-sm-6 col-xs-12 ">
+      					<span><h3 class="beauty">ArtPlay studio</h3></span>  
+      					<p>это творческое пространство созданное для совместного развития 
+      	                и самовыражения Вас и Ваших детей, открытое 7 дней в неделю и  расположенное на 300-х квадратных 
+      	                метрах.</p>
+      	                
+      	                              
+      	                <p>Задача нашей студии помочь нашим детям понять окружающий мир и 
+      	                    раскрыть внутренние способности их личности, с помощью эстетического 
+      	                    образования, их творческих способностей, сохранения их индивидуальности, 
+      	                    развития воображения, нравственных представлений, 
+      	                    ассоциативного мышления.<br><br>
+      	                </p>              
+      	                <h5 class="text-uppercase beauty"><span class="red"><b>Миссия:</b></span> «личность - творец - художник - личность»</h5>
+      	                <p><br>
+      	                    В нашей студии занятия проводятся, не за партами, а в добродушной, 
+      	                    непринужденной обстановке.  Программа составлена таким образом, 
+      	                    что любое из выбранных вами направлений включает в себя сферы 
+      	                    физического развития и эстетического образования, каждое занятие 
+      	                    будет чередоваться сменой деятельности и в игровой форме.  
+      	                </p>
+      				</div>
+      				<div class="col-md-6 col-sm-6 col-xs-12  mission-slider" >
+                  <div class="mission-img">
+                    <img src="img/all_img/20170904-080.jpg" alt="">
+                </div>
+      					
+      				</div>
+                   
+            </div>
+            <div class="container">
+             
+              <div class="col-md-6 col-sm-6  rightSideSlider"></div>
+            </div>
+
+        </section>
+
+
+
+ 
+        <section class="body-balet" ng-controller="baletСontroller as old" id="gymn" ng-cloak>
+          <div class="container gym bottomLine">
+              <div class="gym-container">
+
+               <div class="row gym-border"> 
+                  <div class="col-md-3 col-sm-3 leftLine">
+                        <div class="kid-menu-btn" ng-click="old.openMenu()">Программы (Взрослые)</div>
+                          <div class="mobile-menu-kids" >
+                               <ul class="mobile-menu-list"  ng-if="old.show" >
+                                  <li><a href="" ng-click="old.getArtBaletbyId(13)">БОДИ БАЛЕТ</a></li>
+                                  <li><a href="" ng-click="old.getArtBaletbyId(14)">MIX DANCE</a></li>
+                                  <li><a href="" ng-click="old.getArtBaletbyId(15)">ЭТИКЕТ</a></li>
+                                  <li><a href="" ng-click="old.getArtBaletbyId(16)">ДЕФИЛЕ</a></li>
+                                  <li><a href="" ng-click="old.getArtBaletbyId(17)">ВИЗАЖ</a></li>
+                              </ul>
+                          </div>
+
+                    <nav class="gym-sidenav-1">
+                      <ul>
+                        <li  style="background: white;"><h4><span class="li-title-bold">FIT</span>LADY</h4></li>
+                        <li><a href="" ng-click="old.getArtBaletbyId(13)">БОДИ БАЛЕТ</a></li>
+                        <li><a href="" ng-click="old.getArtBaletbyId(14)">MIX DANCE</a></li>
+                      </ul>
+                      <ul>
+                        <li  style="background: white;"><h4><span class="li-title-bold">ЭСТЭТ</span>LADY</h4></li>
+                        <li><a href="" ng-click="old.getArtBaletbyId(15)">ЭТИКЕТ</a></li>
+                        <li><a href="" ng-click="old.getArtBaletbyId(16)">ДЕФИЛЕ</a></li>
+                        <li><a href="" ng-click="old.getArtBaletbyId(17)">ВИЗАЖ</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col-md-9 col-sm-9 body-text-col">
+                    <div  class="col-md-12 col-sm-12 gym-text">
+                      <div class="balery-img">
+                        <img src="{{old.oldArticle[0].img}}" alt="">
+                      </div>
+                      <span class="gym-text-title">{{old.oldArticle[0].title}}</span><br>
+                    </div>
+                    <div class="col-md-12 col-sm-12" ><br>
+                      <div >
+                        <p>{{old.oldArticle[0].text}}</p>
+                      </div><br>
+                    </div>
+                    <br>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12  sign-col">
+                    <div class="sign "  data-toggle="modal" data-target="#requestmodal" ng-click="old.changeIdcat(old.oldArticle[0].id)"><a href="" >ЗАПИСАТЬСЯ</a></div>
+                  </div><br>
+
+                </div>
+
+              </div>
+            </div>      
+        </section>
+
+        
+ 
+        <section class="team" id="ourTeam" ng-controller="teamCtrl as tm" ng-cloak>
+            <div class="container">
+                <h3 class="text-uppercase text-center beauty" style="font-size: 1.3em;"><span class="red"><b>Наша команда:</b></span> Высококвалифицированные талантливые преподаватели!</h3>
+                <p>Главная задача наших перподавателей  выявить и развить творческие способности у детей, при этом вооружая  их  всесторонними 
+                знаниями о культуре, искусстве, этикете, которые с легкостью можно будет применить в жизни.  
+                </p>
+            </div>
+            <div class="container team-slider">
+                <div id="slider-team" class="owl-carousel owl-theme">
+
+                    <div class="item " ng-repeat="person in tm.team">
+                        <div class="item-teacher">
+                          <div class="team-person-img" ng-click="tm.openModalTeam($index, person.img, person.name, person.prof, person.text)">
+                            <img  src="{{person.img}}">
+                          </div>
+                          <div class="item-teacher-text">
+                            <p class="t_fio"><b>{{person.name}}</b></p>
+
+                            <p class="specialize">{{person.prof}}</p>
+                            <p class="team-about">
+                              {{person.text}}
+                            </p>
+                            <button class="btn more-btn"  ng-click="tm.openModalTeam($index, person.img, person.name, person.prof, person.text)">ПОДРОБНЕЕ</button>  
+                          </div>   
+                        </div>      
+                    </div>
+
+                </div>                
+            </div>
+        </section>
+
+
+
+        <section class="atmosphere" ng-controller="atmosnCtrl as atm"  ng-cloak >
+            <div class="container" id="atmo">
+                <h3 class="text-uppercase text-center beauty"><span class="red"><b>Атмосфера:</b></span> «единение – интерес – целенаправленность»</h3>
+                <p>
+                    Неповторимая атмосфера созданная творчеством, душевным теплом и взаимопониманием  детей, педагогов 
+                    и родителей, помогающая познавать, развивать  и приобретать  знания и навыки в танце, дефиле, хороших 
+                    манерах, узнавать об исторических эпохах и правилах  этикета в прошлом и настоящем, обучаться искусству 
+                    фотографии, стилистике образа, макияжу и многому другому.
+                </p>
+            </div>
+            
+            <div class="atmosphere-slider">
+                <div id="slider" class="owl-carousel owl-theme">
+                    <div class="item" ng-repeat="img in atm.atmoImages">
+                      <div>
+                         <img src="{{img.url}}" ng-click="atm.fullsize($index)">
+                      </div>
+                    </div> 
+                </div>                
+            </div>
+             
+        </section>
+
+
+
+        <section class="events" ng-controller="articlesCtrl as art"  ng-cloak>
+            <div class="container">
+                <div class="col-md-12 col-sm-12 beauty text-uppercase text-center article-title"> <h3>Наши СОБЫТИЯ</h3></div>
+                <div class="row">
+
+                  <div class="col-md-4 col-sm-4 col-xs-12" ng-repeat="article in art.articles">
+                      <div class="col-md-9 events-img">
+                        <img   src="{{article.img}}">
+                      </div>
+                      <div class="col-md-9 article-text">
+                        <h5>{{article.date}}</h5>
+                        <h3>{{article.title}}</h3>
+                        <p>{{article.text_preview}}</p>
+                        <button class="btn-link read-more" ng-click="art.openModalEvents(article.id, article.images,  article.date, article.title, article.text)">читать далее</button><br>
+                      </div>
+                  </div><br>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="address" id="contcs">
+            <div class="container-fluid">
+                <div id="map" class="col-md-6"></div>
+                <div id="banner" class="col-md-6 text-center">
+                    <div class="footer-logo">
+                      <img width=50%"  src="../img/logo.png" alt="logo">
+                    </div>
+                    <div class="adress-text">
+                      <strong>ЖДЕМ ВАС ПО АДРЕСУ:</strong> 
+                      <p>г. Минск, пр-т Победителей 106 (2-ой корабль)</p>
+                      <span><strong>тел.</strong> +375 (29) <strong> 659 32 88</strong></span>
+                    </div>
+                        
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            
+        </section>
+
+        <footer >
+            <div class="text-center beauty">ARTplay Studio</div>
+        </footer>
+        
+
+        <div  ng-controller="mainCtrl as mn" class="modal fade" id="requestmodal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">                   
+              <div class="modal-body"> 
+
+              <div class="media">
+                  <div class="media-left">
+                      <img width="80" src="img/14.png">
+                  </div>
+                  <div class="media-body">
+
+                      <form name='recordForm'  class="beauty form-horizontal" novalidate>
+                          <div class="form-group" ng-class="{ 'has-error' : recordForm.category.$pristine }">
+                              <label class="col-sm-3 control-label">КАТЕГОРИЯ</label>
+                              <div class="col-sm-9">
+									
+		                       <select class="form-control" ng-model="mn.categorys[cat_id].id"  name="cat">
+							    <option value="{{category.id}}" ng-repeat="category in mn.categorys">{{category.title}}</option>
+							  </select>
+                              
+                                <p ng-show="mn.categorys[cat_id] == undefined" class="help-block">ВЫБЕРИТЕ КАТЕГОРИЮ</p>
+                              </div>  
+                          </div>
+
+                          <div class="form-group" ng-class="{ 'has-error' : recordForm.name.$invalid && !recordForm.name.$pristine }">
+                              <label class="col-sm-3 control-label">ИМЯ</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" name="name" ng-model="user.name" required>
+                                <p ng-show="recordForm.name.$invalid && !recordForm.name.$pristine" class="help-block">ВВЕДИТЕ ИМЯ</p>
+                              </div>
+                              
+                          </div>
+
+                          <div class="form-group"  ng-class="{ 'has-error' : recordForm.email.$invalid && !recordForm.email.$pristine }">
+                              <label class="col-sm-3 control-label">E-MAIL</label>
+                              <div class="col-sm-9">
+                                <input type="email" class="form-control" name="email" ng-model="user.email" required >
+                                <p ng-show="recordForm.email.$invalid && !recordForm.email.$pristine" class="help-block">НЕКОРРЕКТНЫЙ EMAIL</p>
+                              </div>
+                              
+                          </div>
+                    
+                          <div class="form-group" ng-class="{ 'has-error' : recordForm.phone.$error.minlength && !recordForm.phone.$pristine }">
+                              <label class="col-sm-3 control-label">+375</label>
+                              <div class="col-sm-9">
+                                <input type="tel" ng-minlength="8" ng-maxlength="8" title="Формат: (29) 999 99 99"  
+                                 class="form-control masked" id="phone" name="phone" ng-model="user.phonenum" >
+                                 <p ng-show="!recordForm.phone.$error.minlength && !recordForm.phone.$pristine" class="help-block">только 17 | 25 | 29 | 33 | 44</p>
+                              </div> 
+                          </div>
+
+                          <br>
+                          <button  class="btn pull-right" type="submit" ng-disabled="recordForm.$invalid" ng-if="mn.showBtn" ng-click="mn.submitForm(user.name, user.email, user.phonenum, mn.categorys[cat_id])" >Записаться</button>
+                          <button type="btn pull-right" class="btn btn-secondary" data-dismiss="modal">закрыть</button>
+                      </form>
+                      <p ng-show="mn.succes"><b style="color:green;">ДАННЫЕ ОТПРАВЛЕНЫ</b></p>
+                      <p ng-show="mn.error"><b style="color:red;">ДАННЫЕ НЕ БЫЛИ ОТПРАВЛЕНЫ</b></p>
+                  </div>
+              </div>               
+                                
+              </div>      
+            </div>
+          </div>
+        </div>
+        
+
+		
+        <script src="js/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src='js/angular-animate/angular-animate.min.js' defer></script>
+        <script src='js/angular-touch/angular-touch.min.js' defer></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+        
+        
+        <script src="js/vendor/modernizr-2.8.3.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="js/owl.carousel.min.js" defer></script>
+        <script src="js/plugins.js" defer></script>
+        <script src="js/masked-input.js" defer></script>
+        <script src="js/ui-bootstrap-tpls-2.5.0.min.js" defer></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        
+        <script src="dist/bundle.js"></script>
+        <!-- <script src="js/main.js"></script>
+        <script src="js/resize.js"></script>
+        <script src="app/app.js"></script>
+    	
+         
+        <script src="app/Ctrls/main.controller.js"></script>
+        <script src="app/Ctrls/gymnastic.controller.js"></script>
+        <script src="app/Ctrls/mission.controller.js"></script>
+        <script src="app/Ctrls/balet.controller.js"></script>
+        <script src="app/Ctrls/team.controller.js"></script>
+        <script src="app/Ctrls/atmosn.controller.js"></script>
+        <script src="app/Ctrls/articles.controller.js"></script>
+
+        <script src="app/services/gymnService.js"></script>
+        <script src="app/services/imagesService.js"></script>
+        <script src="app/services/teamService.js"></script>
+        <script src="app/services/articlesService.js"></script>
+        <script src="app/services/categorysService.js"></script>
+        <script src="app/services/mainService.js"></script> -->
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>       
+    </body>
+</html>

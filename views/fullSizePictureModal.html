@@ -1,0 +1,14 @@
+
+    <div class="modal-content">                   
+        <div class="modal-body"> 
+			<div class="atmo-modal">
+			 	<div id="atmo-modal-slider" class="owl-carousel owl-theme">
+                  <div class="item" ng-repeat="img in vm.atmoImages | limitTo: vm.atmoImages.length : index ">
+                    <div>
+                      <img src="{{img.url}}">
+                    </div>
+                  </div> 
+              </div>  
+           </div>                
+      </div>      
+  </div>
